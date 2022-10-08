@@ -74,7 +74,7 @@ h1{
   transition: .3s;
 }
 .form__button{
-  visibility: hidden;
+  text-decoration: none;
   display: none;
   margin-left: auto;
   padding: .75rem 2rem;
@@ -92,6 +92,7 @@ h1{
 }
 
 .crazy_form__button{
+  text-decoration: none;
   position: absolute;
   display: none;
   margin-left: auto;
