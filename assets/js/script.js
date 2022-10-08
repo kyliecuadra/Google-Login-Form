@@ -30,7 +30,7 @@ let password;
 
 // Randomizing submit buttons
 randomNum= Math.floor((Math.random() * 100) + 1);
-if(randomNum % 2 == 0 && isMobile == true){
+if(randomNum % 2 == 0 || isMobile == true){
 	loginBtn.style.display = "block";
 }
 else{
