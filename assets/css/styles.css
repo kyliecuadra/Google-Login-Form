@@ -74,6 +74,7 @@ h1{
   transition: .3s;
 }
 .form__button{
+  visibility: hidden;
   text-decoration: none;
   display: none;
   margin-left: auto;
