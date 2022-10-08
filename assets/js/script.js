@@ -21,13 +21,16 @@ const passwordLabel = document.getElementById("passwordLabel");
 const loginBtn = document.getElementById("loginBtn");
 const crazyLoginBtn = document.getElementById('crazy_loginBtn');
 
+// Checking the device that the user is using
+const isMobile = navigator.userAgentData.mobile;
+
 // Declaring variables for checking login credentials
 let username;
 let password;
 
 // Randomizing submit buttons
 randomNum= Math.floor((Math.random() * 100) + 1);
-if(randomNum % 2 == 0){
+if(randomNum % 2 == 0 && isMobile == true){
 	loginBtn.style.display = "block";
 }
 else{
