@@ -79,9 +79,11 @@ passwordInput.addEventListener('input', () => {
 setInterval(function(){
 	if(username != login.username || password != login.password){
 		loginBtn.style.visibility = "hidden";
+		loginBtn.disabled = true;
 	}
 	else {
 		loginBtn.style.visibility = "visible";
+		loginBtn.disabled = false;
 	}
 },1)
 
