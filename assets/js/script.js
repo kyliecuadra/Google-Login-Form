@@ -95,3 +95,8 @@ crazyLoginBtn.addEventListener('touchstart', function () {
     crazyLoginBtn.style.left = `${Math.ceil(Math.random() * 90)}%`;
     crazyLoginBtn.style.top = `${Math.ceil(Math.random() * 90)}%`;
 });
+
+
+loginBtn.addEventListener('click', () => {
+	alert("Button is working xD");
+})
