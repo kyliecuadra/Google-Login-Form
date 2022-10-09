@@ -21,9 +21,6 @@ const passwordLabel = document.getElementById("passwordLabel");
 const loginBtn = document.getElementById("loginBtn");
 const crazyLoginBtn = document.getElementById('crazy_loginBtn');
 
-// Checking the device that the user is using
-const isMobile = navigator.userAgentData.mobile;
-
 // Declaring variables for checking login credentials
 let username;
 let password;
@@ -90,6 +87,11 @@ setInterval(function(){
 
 // Crazy comment
 crazyLoginBtn.addEventListener('mouseover', function () {
+    crazyLoginBtn.style.left = `${Math.ceil(Math.random() * 90)}%`;
+    crazyLoginBtn.style.top = `${Math.ceil(Math.random() * 90)}%`;
+});
+
+crazyLoginBtn.addEventListener('touchstart', function () {
     crazyLoginBtn.style.left = `${Math.ceil(Math.random() * 90)}%`;
     crazyLoginBtn.style.top = `${Math.ceil(Math.random() * 90)}%`;
 });
